@@ -1,10 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Counter from "./counter.js";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <Counter />
       <main className={styles.main}>
+        <Link href="/about">Aboutページへ移動</Link>
         <Image
           className={styles.logo}
           src="/next.svg"
